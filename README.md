@@ -9,83 +9,83 @@ Endpoint: /student/register<br>
 Method: POST<br>
 Description: Registers a new student in the system. The student's details are saved in the database for future reference and participation in quizzes.
 
-2. Start a New Quiz Session
-Endpoint: /quiz/start
-Method: POST
-Description: Initializes a new quiz session for a user.
-Request Body:
-{
-    "userName":"sahaj",
-    "email":"sahaj1032@gmail.com",
-    "password":"sahaj"
-}
-Response: Session initialized message with user details
+2. Start a New Quiz Session<br>
+Endpoint: /quiz/start<br>
+Method: POST<br>
+Description: Initializes a new quiz session for a user.<br>
+Request Body:<br>
+{<br>
+    "userName":"sahaj",<br>
+    "email":"sahaj1032@gmail.com",<br>
+    "password":"sahaj"<br>
+}<br>
+Response: Session initialized message with user details<br>
 
-3. Get a Random Question
-Endpoint: /quiz/question
-Method: GET
-Description: Fetches a random multiple-choice question for the user from the database.
-Headers: Requires session tracking through HttpSession.
-Response:
-{
-    "A": "Elephant",
-    "B": "Blue Whale",
-    "C": "Giraffe",
-    "D": "Great White Shark",
-    "QuestionID": "3",
-    "Question": "What is the largest mammal on Earth?"
-}
+3. Get a Random Question<br>
+Endpoint: /quiz/question<br>
+Method: GET<br>
+Description: Fetches a random multiple-choice question for the user from the database.<br>
+Headers: Requires session tracking through HttpSession.<br>
+Response:<br>
+{<br>
+    "A": "Elephant",<br>
+    "B": "Blue Whale",<br>
+    "C": "Giraffe",<br>
+    "D": "Great White Shark",<br>
+    "QuestionID": "3",<br>
+    "Question": "What is the largest mammal on Earth?"<br>
+}<br>
 
-4. Submit an Answer
-Endpoint: /quiz/answer
-Method: POST
-Description: Submits the user's answer for the current question.
-Request Body:
-{
-    "questionId":3,
-    "answer":"B"
-}
-Response: Result of the submitted answer (correct/incorrect).
+4. Submit an Answer<br>
+Endpoint: /quiz/answer<br>
+Method: POST<br>
+Description: Submits the user's answer for the current question.<br>
+Request Body:<br>
+{<br>
+    "questionId":3,<br>
+    "answer":"B"<br>
+}<br>
+Response: Result of the submitted answer (correct/incorrect).<br>
 
-5. Add Questions
-Endpoint: /quiz/addQuestion
-Method: POST
-Description: Adds a list of questions to the quiz database.
-Request Body:
-[
-  {
-    "question": "What is the capital of France?",
-    "a": "Paris",
-    "b": "London",
-    "c": "Rome",
-    "d": "Berlin",
-    "answer": "A"
-  }
-]
-Response: Status message indicating the success or failure of adding questions.
+5. Add Questions<br>
+Endpoint: /quiz/addQuestion<br>
+Method: POST<br>
+Description: Adds a list of questions to the quiz database.<br>
+Request Body:<br>
+[<br>
+  {<br>
+    "question": "What is the capital of France?",<br>
+    "a": "Paris",<br>
+    "b": "London",<br>
+    "c": "Rome",<br>
+    "d": "Berlin",<br>
+    "answer": "A"<br>
+  }<br>
+]<br>
+Response: Status message indicating the success or failure of adding questions.<br>
 
-6. Get Quiz Summary
-Endpoint: /quiz/summary
-Method: GET
-Description: Retrieves a summary of the quiz session, including the total questions answered, correct answers, and incorrect answers.
-Response:
-[
-    {
-        "Total Correct Questions : ": "1",
-        "Total Attempted Questions : ": "1",
-        "Total Incorrect Questions : ": "0",
-        "QuizId": "1"
-    },
-    {
-        "Question": "What is the largest mammal on Earth?",
-        "Student Answer": "B",
-        "Right Answer": "B"
-    }
-]
+6. Get Quiz Summary<br>
+Endpoint: /quiz/summary<br>
+Method: GET<br>
+Description: Retrieves a summary of the quiz session, including the total questions answered, correct answers, and incorrect answers.<br>
+Response:<br>
+[<br>
+    {<br>
+        "Total Correct Questions : ": "1",<br>
+        "Total Attempted Questions : ": "1",<br>
+        "Total Incorrect Questions : ": "0",<br>
+        "QuizId": "1"<br>
+    },<br>
+    {<br>
+        "Question": "What is the largest mammal on Earth?",<br>
+        "Student Answer": "B",<br>
+        "Right Answer": "B"<br>
+    }<br>
+]<br>
 
-7. Logout
-Endpoint: /quiz/logout
-Method: POST
-Description: Logs the user out by invalidating the session.
-Response:
+7. Logout<br>
+Endpoint: /quiz/logout<br>
+Method: POST<br>
+Description: Logs the user out by invalidating the session.<br>
+Response:<br>
 Logged out successfully.
