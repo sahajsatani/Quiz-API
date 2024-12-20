@@ -2,6 +2,17 @@
 Project Summary
 This project is a Quiz Application built using Spring Boot. It provides a REST API for managing quiz sessions, retrieving questions, submitting answers, and viewing results. The application uses HttpSession to maintain user-specific quiz sessions and features endpoints for quiz management and participation.
 
+# Instructions to Run the Code
+Follow these steps to set up and run the Quiz Application API:<br>
+Prerequisites<br>
+Make sure the following are installed on your system:<br>
+
+Java Development Kit (JDK): Version 8 or above<br>
+Maven: Version 3.6 or above<br>
+Spring Boot: Included as part of the Maven dependencies<br>
+MySQL: To set up the database<br>
+Postman or Curl: For testing the API endpoints (optional but recommended)<br>
+
 
 # Endpoints
 
