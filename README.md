@@ -4,12 +4,9 @@ This project is a Quiz Application built using Spring Boot. It provides a REST A
 
 # Endpoints
 
-1.Register Student
-
-Endpoint: /student/register
-
-Method: POST
-
+1.Register Student<br>
+Endpoint: /student/register<br>
+Method: POST<br>
 Description: Registers a new student in the system. The student's details are saved in the database for future reference and participation in quizzes.
 
 2. Start a New Quiz Session
