@@ -2,6 +2,10 @@
 Project Summary
 This project is a Quiz Application built using Spring Boot. It provides a REST API for managing quiz sessions, retrieving questions, submitting answers, and viewing results. The application uses HttpSession to maintain user-specific quiz sessions and features endpoints for quiz management and participation.
 
+# Database Design
+![image](https://github.com/user-attachments/assets/c4ff10da-00c8-47bd-b88b-5e5d68efd636)
+
+
 # Endpoints
 
 1.Register Student<br>
