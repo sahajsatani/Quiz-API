@@ -10,7 +10,7 @@ Make sure the following are installed on your system:<br>
 Java Development Kit (JDK): Version 8 or above<br>
 Maven: Version 3.6 or above<br>
 Spring Boot: Included as part of the Maven dependencies<br>
-MySQL: To set up the database<br>
+H2: To set up the database<br>
 Postman or Curl: For testing the API endpoints (optional but recommended)<br>
 
 
